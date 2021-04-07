@@ -5,7 +5,7 @@
 		</div>
 		<ul>
 
-			<li 
+			<li
 			class='vacation-item'
 			v-for='item in vacationList'
 			>
@@ -28,7 +28,7 @@ export default {
 	props:['vacationList'],
 	data () {
 		return {
-			
+
 		}
 	}
 }
@@ -59,7 +59,7 @@ export default {
 	margin-top:.2rem;
 }
 .vacation-msg p+p{
-	color: #616161;
+	  color: #616161;
     font-size: .24rem;
 }
 </style>

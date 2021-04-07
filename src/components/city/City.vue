@@ -25,6 +25,7 @@ export default {
 	mounted(){
 		this.$http.get('/api/city.json')
 		.then((res)=>{
+      console.log(res)
 			let data = res.data.data;
 			this.hotCities=data.hotCities;
 			this.cities=data.cities;

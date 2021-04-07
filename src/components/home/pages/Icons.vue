@@ -1,15 +1,15 @@
 <template>
 	<div class='icons'>
-		
+
 
 		<swiper :options="swiperOption">
 
-			<swiper-slide 
+			<swiper-slide
 			v-for='(item,key) in page'
 			:key='key'
 			>
 
-			 	<div class='icons-item' 
+			 	<div class='icons-item'
 			 	v-for='page in item'
 			 	:key='page.id'
 			 	>
@@ -37,7 +37,7 @@ export default {
 
 			let pages = [];
 
-			this.iconsList.forEach((item,index)=>{
+			this.iconsList.forEach((item,index)=>{ //item 当前元素的值 index 索引 array 本身
 
 				let idx = Math.floor(index/8);
 

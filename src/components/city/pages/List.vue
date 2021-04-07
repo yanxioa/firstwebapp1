@@ -17,6 +17,7 @@
       </div>
 
       <!--sort-->
+      <!--      val={} key=A B...-->
       <div class='sort'>
         <div class='sort-title'>字母排序</div>
         <ul class='sort-list'>
@@ -31,6 +32,7 @@
       </div>
 
       <!--list-->
+      <!--      val={} key=A B...-->
       <div class='list'>
         <div
           v-for='(val,key) in cities'

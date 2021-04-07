@@ -55,7 +55,9 @@ export default {
 			this.$http.get("/api/dataHome.json")
 			.then((res)=>{
 				const data = res.data.data;
+        // console.log(data)
 				data.forEach((item,index)=>{
+          // console.log(item.city,this.city)
 					if(item.city==this.city){
 						this.swiperList=item.swiperList;
 						this.iconsList=item.iconsList;
@@ -64,7 +66,7 @@ export default {
 						this.vacationList=item.vacationList;
 					}
 				})
-				
+
 			})
 		}
 	},
